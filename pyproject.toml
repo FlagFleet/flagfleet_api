@@ -1,7 +1,18 @@
-[project]
+[tool.poetry]
 name = "flagfleet-api"
 version = "0.1.0"
-description = "Add your description here"
+description = ""
+authors = ["ER28 <l.guerra-rago@pm.me>"]
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = []
+package-mode=false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.4"
+uvicorn = "^0.32.0"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
