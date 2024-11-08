@@ -1,7 +1,9 @@
+from sqlalchemy import URL
 from sqlmodel import Session, SQLModel, create_engine
 from config import get_settings
 
 settings = get_settings()
+print(settings.DATABASE_URL)
 engine = create_engine(settings.DATABASE_URL, echo=True)
 
 def init_db():
